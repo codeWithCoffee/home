@@ -8,6 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+
     <link rel="stylesheet" href="../style/background.css">
     <link rel="stylesheet" href="../style/contentSection.css">
 </head>
@@ -19,7 +22,7 @@
     <div class="mainContent my-3">
         <div class="leftContent bg-light p-4">
             <h3 class="mb-5">Modules and pip in Python!</h3>
-            <!-- <h4 class="mb-4"></h4> -->
+            <h4 class="mb-4">Modules</h4>
             <p>
                 Module is like a code library which can be used to borrow code written by somebody else in our python program. There are two types of modules in python:
             </p>
@@ -29,24 +32,24 @@
             </ol>
             <h5>The pip command</h5>
             <p>It can be used as a package manager pip to install a python module. Lets install a module called pandas using the following command</p>
-            <p>pip install pandas</p>
+            <p class="bg-secondary p-2 text-light">pip install pandas</p>
 
             <h5>Using a module in Python (Usage)</h5>
             <p>We use the import syntax to import a module in Python. Here is an example code:</p>
-            <pre>
-                <code lang="language-python">
-                    import pandas
-
-                    # Read and work with a file named 'words.csv'
-                    df = pandas.read_csv('words.csv')
-                    print(df) # This will display first few rows from the words.csv file
-                </code>
+            <pre class="bg-dark text-light">
+            <code lang="language-python">
+    import pandas
+    # Read and work with a file named 'words.csv'
+    df = pandas.read_csv('words.csv')
+    print(df) # This will display first few rows from the words.csv file
+            </code>
             </pre>
+            
             <p>Similarly we can install other modules and look into their documentations for usage instructions.
                 We will find ourselved doing this often in the later part of this course</p>
             <div class="pre_next d-flex justify-content-between flex-wrap">
-                <div class="previous"><a href="../pages/intro.html" class="text-decoration-none">Previous</a></div>
-                <div class="next"><a href="" class="text-decoration-none">Next >></a></div>
+                <div class="previous"><a href="../pages/intro.html" class="text-decoration-none"><i class="bi bi-chevron-double-left"></i>Previous</a></div>
+                <div class="next"><a href="../pages/helloworld.html" class="text-decoration-none">Next<i class="bi bi-chevron-double-right"></i></a></div>
             </div>
         </div>
         <div class="rightContent bg-light p-2">
@@ -62,6 +65,7 @@
 
     <div class="footer"></div>
 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
@@ -75,3 +79,4 @@
 </body>
 
 </html>
+
