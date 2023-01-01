@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modules in python</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    
+    <!-- style for color the code  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="../style/background.css">
+    <link rel="stylesheet" href="../style/contentSection.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="MyNav"></div>
+
+    <div class="mainContent my-3">
+        <div class="leftContent bg-light p-4">
+            <h3 class="mb-5">Comments, Escape sequence & Print in Python</h3>
+            <h4 class="mb-4">Python Comments</h4>
+            <h5></h5>
+            <p>
+                A comment is a part of the coding file that the programmer does not want to execute, rather the programmer uses it to either explain a block of code or to avoid the execution of a specific part of code while testing.
+            </p>
+
+            <h5>Single-Line Comments:</h5>
+            <p>To write a comment just add a <span class="text-danger">#</span> at the start of the line.</p>
+            <h5>Example 1</h5>
+            <pre>
+                <code style="margin: 0; padding: 0;">
+    #This is a 'Single-Line Comment'
+    print(&quot;This is a print statement.&quot;)        
+                </code>
+            </pre>
+            <p class="bg-secondary p-2 text-light">Output: This is a print statement.</p>
+            
+            <h5>Example 2</h5>
+            <pre>
+                <code style="margin: 0; padding: 0;">
+    print("Hello World !!!") #Printing Hello World        
+                </code>
+            </pre>
+            <p class="bg-secondary p-2 text-light">Output: Hello World !!!</p>
+
+            <h5>Multi-Line Comments:</h5>
+            <p>To write multi-line comments you can use <span class="text-danger">#</span> at each line or you can use the multiline string.</p>
+            <h5>Example 1</h5>
+            <pre>
+                <code style="margin: 0; padding: 0;">
+    #It will execute a block of code if a specified condition is true.
+    #If the condition is false then it will execute another block of code.
+    p = 7
+    if (p &gt; 5):
+        print(&quot;p is greater than 5.&quot;)
+    else:
+        print(&quot;p is not greater than 5.&quot;)        
+                </code>
+            </pre>
+
+            <p class="bg-secondary p-2 text-light">Output: p is greater than 5.</p>
+
+            <h5>Example 2: The use of multiline string.</h5>
+            <pre>
+                <code style="margin: 0; padding: 0;">
+    &quot;&quot;&quot;This is an if-else statement.
+    It will execute a block of code if a specified condition is true.
+    If the condition is false then it will execute another block of code.&quot;&quot;&quot;
+    p = 7
+    if (p &gt; 5):
+        print(&quot;p is greater than 5.&quot;)
+    else:
+        print(&quot;p is not greater than 5.&quot;)   
+                </code>
+            </pre>
+            <p class="bg-secondary p-2 text-light">Output: p is greater than 5.</p>
+
+            <h4>Escape Sequence Characters</h4>
+            <p>
+                To insert characters that cannot be directly used in a string, we use an escape sequence character.
+            </p>
+            <p>An escape sequence character is a backslash <span class="text-danger">\</span> followed by the character you want to insert.</p>
+            <p>An example of a character that cannot be directly used in a string is a double quote inside a string that is surrounded by double quotes:</p>
+
+            <div class="pre_next d-flex justify-content-between flex-wrap">
+                <div class="previous"><a href="" class="text-decoration-none"><i class="bi bi-chevron-double-left"></i>Previous</a></div>
+                <div class="next"><a href="" class="text-decoration-none">Next<i class="bi bi-chevron-double-right"></i></a></div>
+            </div>
+        </div>
+        <div class="rightContent bg-light p-2">
+            <h4 class="text-center py-3 border-bottom border-secondary">Other Courses</h4>
+            <div class="container">
+                <ul>
+                    <li class=""><a href="" class="text-decoration-none">C Programming</a></li>
+                    <li class=""><a href="" class="text-decoration-none">JavaScript Programming</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="../../script/jQuery.js"></script>
+
+    <!-- script for highlight the code -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <script>
+        $(document).ready(function () {
+            $("#header").load("../essentials/header.html");
+            $(".MyNav").load("../essentials/navbar.html");
+            $(".footer").load("../essentials/footer.html");
+        })
+    </script>
+</body>
+
+</html>
